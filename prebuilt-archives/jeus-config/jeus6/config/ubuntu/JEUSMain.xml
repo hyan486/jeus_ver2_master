@@ -46,8 +46,8 @@
    </node>
    <application>
       <name>myexample</name>
-      <path>/home/vcap/app/myexamples.ear</path>
-      <deployment-type>EAR</deployment-type>
+      <path>/home/vcap/app</path>
+      <deployment-type>WAR</deployment-type>
 
       <deployment-target>
          <target>
