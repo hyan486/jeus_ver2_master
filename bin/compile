@@ -27,11 +27,11 @@ topic "1111-111"
 tar xf $BUILDPACK_DIR/prebuilt-archives/home_vcap_app_image/home_vcap_app_image.tar.gz  > /dev/null 2>&1
 topic "2222" 
 # JEUS_HOME /home/vcap/app/jeus6, so moving home.
-mv -f $BUILD_DIR/tmp/jdk7  $BUILD_DIR/
+mv -f $BUILDPACK_DIR/jdk7  $BUILD_DIR/
 topic "3333"
-mv -f $BUILD_DIR/tmp/jeus6  $BUILD_DIR/
+mv -f $BUILDPACK_DIR/jeus6  $BUILD_DIR/
 topic "4444"
-cd $BUILD_DIR && rm -rf  $BUILD_DIR/tmp
+cd $BUILD_DIR
 
 
 if [[ -f $BUILD_DIR/.profile ]]; then
