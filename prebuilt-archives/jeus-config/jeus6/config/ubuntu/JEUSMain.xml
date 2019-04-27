@@ -48,7 +48,6 @@
       <name>myexample</name>
       <path>/home/vcap/app</path>
       <deployment-type>COMPONENT</deployment-type>
-
       <deployment-target>
          <target>
             <engine-container-name>__CONTAINER_HOSTNAME___container1</engine-container-name>
@@ -57,5 +56,8 @@
             </web-context-group>
          </target>
       </deployment-target>
+      <web-component>
+            <context-root>/anna</context-root>
+      </web-component>
    </application>
 </jeus-system>
