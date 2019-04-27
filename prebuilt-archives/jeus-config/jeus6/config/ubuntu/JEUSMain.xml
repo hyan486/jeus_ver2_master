@@ -47,7 +47,7 @@
    <application>
       <name>myexample</name>
       <path>/home/vcap/app</path>
-      <deployment-type>WAR</deployment-type>
+      <deployment-type>COMPONENT</deployment-type>
 
       <deployment-target>
          <target>
