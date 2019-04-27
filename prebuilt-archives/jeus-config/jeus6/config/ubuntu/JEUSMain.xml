@@ -45,7 +45,7 @@
       </system-logging>
    </node>
    <application>
-      <name>myexample</name>
+      <name>ds</name>
       <path>/home/vcap/app</path>
       <deployment-type>COMPONENT</deployment-type>
       <deployment-target>
@@ -57,7 +57,7 @@
          </target>
       </deployment-target>
       <web-component>
-            <context-root>/anna</context-root>
+            <context-root>/</context-root>
       </web-component>
    </application>
 </jeus-system>
