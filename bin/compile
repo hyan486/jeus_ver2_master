@@ -18,10 +18,14 @@ cd $BUILD_DIR
 
 topic "installing pre-compiled JDK7 && JEUS 6"
 mkdir -p $BUILD_DIR/tmp && cd $BUILD_DIR/tmp
-tar xf $BUILDPACK_DIR/prebuilt-archives/home_vcap_app_image/home_vcap_app_image.tar.gz  > /dev/null 2>&1 
+topic "1111"
+tar xf $BUILDPACK_DIR/prebuilt-archives/home_vcap_app_image/home_vcap_app_image.tar.gz  > /dev/null 2>&1
+topic "2222" 
 # JEUS_HOME /home/vcap/app/jeus6, so moving home.
 mv -f $BUILD_DIR/tmp/jdk7  $BUILD_DIR/
+topic "3333"
 mv -f $BUILD_DIR/tmp/jeus6  $BUILD_DIR/
+topic "4444"
 cd $BUILD_DIR && rm -rf  $BUILD_DIR/tmp
 
 
@@ -32,7 +36,7 @@ else
   cp $BUILDPACK_DIR/prebuilt-archives/.profile  $BUILD_DIR/.profile
 fi
 
-
+topic "55555"
 ## 'ubuntu' is hostname of jeus server
 if [[ -d $BUILD_DIR/jeus/config/ ]]; then
   echo "using cf pushed ./jeus/config/* instead of configuration from buildpack."
@@ -42,7 +46,7 @@ else
   cp -rf $BUILDPACK_DIR/prebuilt-archives/jeus-config/jeus6/config  $BUILD_DIR/jeus6/
 fi
 
-
+topic "6666"
 if [[ -f $BUILD_DIR/start-jeus.sh ]]; then
   echo "using cf pushed start-jeus.sh to start jeus"	
 else
