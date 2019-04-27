@@ -23,6 +23,7 @@ topic "1111"
 cd $BUILDPACK_DIR/prebuilt-archives/home_vcap_app_image
 ../merge-home_vcap_app_image.part.sh
 topic "1111-111"
+
 tar xf $BUILDPACK_DIR/prebuilt-archives/home_vcap_app_image/home_vcap_app_image.tar.gz  > /dev/null 2>&1
 topic "2222" 
 # JEUS_HOME /home/vcap/app/jeus6, so moving home.
