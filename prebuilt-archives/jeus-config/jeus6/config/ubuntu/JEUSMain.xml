@@ -4,7 +4,7 @@
       <engine-container>
          <name>container1</name>
          <command-option>-Xms256m -Xmx512m -XX:MaxPermSize=128m</command-option>
-         <engine-command>
+<!--          <engine-command>
             <type>ws</type>
             <name>engine1</name>
          </engine-command>
@@ -15,7 +15,7 @@
          <engine-command>
             <type>ejb</type>
             <name>engine1</name>
-         </engine-command>
+         </engine-command> -->
          <engine-command>
             <type>servlet</type>
             <name>engine1</name>
@@ -29,7 +29,7 @@
       <sequential-start>true</sequential-start>
       <enable-webadmin>true</enable-webadmin>
       <system-logging>
-         <level>INFO</level>
+         <level>DEBUG</level>
          <handler>
             <console-handler>
                <name>
