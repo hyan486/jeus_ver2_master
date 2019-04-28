@@ -39,7 +39,7 @@ if [ -d "$JEUS_HOME/config/$CONTAINER_HOSTNAME/ubuntu_jms_engine1" ]; then
   mv "$JEUS_HOME/config/$CONTAINER_HOSTNAME/ubuntu_jms_engine1" "$JEUS_HOME/config/$CONTAINER_HOSTNAME/${CONTAINER_HOSTNAME}_jms_engine1"
 fi
 
-
+mv /home/vcap/app/WEB-INF/lib/* /home/vcap/app/jeus6/lib/application/.
 
 nohup jeus &
 sleep 20
