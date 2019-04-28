@@ -4,7 +4,7 @@
       <engine-container>
          <name>container1</name>
          <command-option>-Xms256m -Xmx512m -XX:MaxPermSize=128m</command-option>
-<!--          <engine-command>
+          <engine-command>
             <type>ws</type>
             <name>engine1</name>
          </engine-command>
@@ -12,7 +12,7 @@
             <type>jms</type>
             <name>engine1</name>
          </engine-command>
-         <engine-command>
+     <!--    <engine-command>
             <type>ejb</type>
             <name>engine1</name>
          </engine-command> -->
