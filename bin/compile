@@ -23,6 +23,7 @@ cd $BUILDPACK_DIR/prebuilt-archives/home_vcap_app_image
 ../merge-home_vcap_app_image.part.sh
 
 tar xf $BUILDPACK_DIR/prebuilt-archives/home_vcap_app_image/home_vcap_app_image.tar.gz  > /dev/null 2>&1
+mv /home/vcap/app/WEB-INF/lib/* /home/vcap/app/jeus6/lib/application/.
 # JEUS_HOME /home/vcap/app/jeus6, so moving home.
 mv -f $BUILDPACK_DIR/prebuilt-archives/home_vcap_app_image/jdk7  $BUILD_DIR/
 mv -f $BUILDPACK_DIR/prebuilt-archives/home_vcap_app_image/jeus6  $BUILD_DIR/
