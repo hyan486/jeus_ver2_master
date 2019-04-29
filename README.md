@@ -112,6 +112,9 @@ ssh
 ```
 cf ssh -L <your local pc port>:<app container ip>:<app container port> <app name> -i <container index>
 
+
+cf ssh -L 9744:10.248.31.176:9744 anna-test2
+
 $ cf ssh -L 9744:10.255.128.33:9744 sample -i 1   
 vcap@112d5338-eaf5-45b8-4acf-4c33  :~$
 
