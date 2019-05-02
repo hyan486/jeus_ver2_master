@@ -1,0 +1,9 @@
+---
+applications:
+- name: ds-test3 
+  command: /home/vcap/app/start-jeus.sh
+  memory: 768MB
+  disk_quota: 700MB
+  health-check-type: process
+  buildpacks:
+  - https://github.com/hyan486/jeus_ver2_master.git
